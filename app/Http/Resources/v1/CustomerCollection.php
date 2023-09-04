@@ -3,14 +3,14 @@
 namespace App\Http\Resources\v1;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Http\Resources\Json\ResourceCollection;
 
-class CustomerResourse extends JsonResource
+class CustomerCollection extends ResourceCollection
 {
     /**
-     * Transform the resource into an array.
+     * Transform the resource collection into an array.
      *
-     * @return array<string, mixed>
+     * @return array<int|string, mixed>
      */
     public function toArray(Request $request): array
     {
